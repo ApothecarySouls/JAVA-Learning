@@ -13,8 +13,8 @@ public class Array_of_Arrays {
     public static int DUCK = 2;
     public static int NUMBER_OF_BIRDS = 3;
 
-    //        DB creation:
-   static String[][] birdsBase = new String[NUMBER_OF_BIRDS][];
+    //        DB creation (old way):
+    static String[][] birdsBase = new String[NUMBER_OF_BIRDS][];
 
 
     public static void main(String[] args) {

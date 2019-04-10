@@ -19,6 +19,6 @@ public class Sith_Lord {
     }
     public void who()
     {
-        System.out.println("I am " + name + " from " + movie + "." + "I wear " + color + " color");
+        System.out.println("I am " + name +  "from " + movie + "." + "I wear " + color + " color");
     }
 }
