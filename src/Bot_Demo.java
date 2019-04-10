@@ -12,16 +12,29 @@ public class Bot_Demo {
      bot2.movie = "Star Wars";
      bot2.color = "gold";
 
+     Light_Sabre sabre1 = new Light_Sabre();
+        sabre1.color = "Red";
+        sabre1.style = "Carelian";
+        sabre1.blades = 1;
+
+     Light_Sabre sabre2 = new Light_Sabre();
+        sabre2.color = "Blue";
+        sabre2.style = "Dagobah";
+        sabre2.blades = 1;
+
      Sith_Lord sith1 = new Sith_Lord();
      sith1.name = "Darth Wader";
      sith1.color = "Black";
-     sith1.lightSabareColor = "Red";
+     sith1.lightSabre = sabre1;
+
+
      sith1.movie = "Star Wars";
 
      Jedi jedi1 = new Jedi();
      jedi1.name = "Obi-Wan-Kenobi";
      jedi1.movie = "Star Wars";
-     jedi1.lightSaberColor = "blue";
+     jedi1.lightSabre = sabre2;
+
 
      separator();
      jedi1.who();

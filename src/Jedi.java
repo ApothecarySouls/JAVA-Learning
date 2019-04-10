@@ -2,11 +2,11 @@ public class Jedi {
 
     String name;
     String movie;
-    String lightSaberColor;
+    Light_Sabre lightSabre;
 
     public void who()
     {
-        System.out.println("I am " + name + " from " + movie + "." + " I have a lightsaber of " + lightSaberColor + " color");
+        System.out.println("I am " + name + " from " + movie + ".");
     }
 
     public void joke()

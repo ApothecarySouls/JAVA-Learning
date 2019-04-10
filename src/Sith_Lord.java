@@ -1,6 +1,6 @@
 public class Sith_Lord {
     String name;
-    String lightSabareColor;
+    Light_Sabre lightSabre;
     String color;
     String movie;
 
