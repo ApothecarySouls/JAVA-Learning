@@ -35,6 +35,22 @@ public class Bot_Demo {
      jedi1.movie = "Star Wars";
      jedi1.lightSabre = sabre2;
 
+     Force f1 = new Force();
+     f1.name = "Lightning";
+     f1.mana = 20;
+     f1.level = 1;
+
+     Force f2 = new Force();
+     f2.name = "Force Push";
+     f2.mana = 40;
+     f2.level = 2;
+
+     Force[] forces = new Force[2];
+     forces[0] = f1;
+     forces[1] = f2;
+
+     jedi1.forces = forces;
+
 
      separator();
      jedi1.who();

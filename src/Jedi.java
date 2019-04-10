@@ -3,6 +3,7 @@ public class Jedi {
     String name;
     String movie;
     Light_Sabre lightSabre;
+    Force[] forces;
 
     public void who()
     {

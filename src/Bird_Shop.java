@@ -17,26 +17,29 @@ public class Bird_Shop {
     public static void main(String[] args) {
 
         Bird bird1 = new Bird();
-        bird1.type = "Crow";
-        bird1.price = 1.0;
-        bird1.inStock = 23;
-        bird1.sold = 3;
+        bird1.setType("Crow");
+        bird1.setPrice(1.0);
+        bird1.setInStock(23);
+        bird1.setSold(3);
 
         Bird bird2 = new Bird();
-        bird2.type = "Eagle";
-        bird2.price = 5.0;
-        bird2.inStock = 24;
-        bird2.sold = 1;
+        bird2.setType("Eagle");
+        bird2.setPrice(5.0);
+        bird2.setInStock(24);
+        bird2.setSold(1);
 
         Bird bird3 = new Bird();
-        bird3.type = "Duck";
-        bird3.price = 0.5;
-        bird3.inStock = 27;
-        bird3.sold = 23;
+        bird3.setType("Duck");
+        bird3.setPrice(0.5);
+        bird3.setInStock(27);
+        bird3.setSold(23);
 
         birdsBase[CROW] = bird1;
         birdsBase[EAGLE] = bird2;
         birdsBase[DUCK] = bird3;
+
+
+        System.out.println(bird1.getInStock());
 
 
 //        System.out.println(Arrays.deepToString(birdsBase));
@@ -91,47 +94,47 @@ public class Bird_Shop {
         return birdsBase[birdType];
     }
 
-    public static void demo() //Shows current base state
-    {
-        System.out.println("\nCrows info: " +
-                "\n- Price -- " + birdsBase[CROW][PRICE] +
-                "\n- In stock -- " + birdsBase[CROW][IN_STOCK] +
-                "\n- Sold -- " + birdsBase[CROW][SOLD]);
-
-        System.out.println("\nEagles info: " +
-                "\n- Price -- " + birdsBase[EAGLE][PRICE] +
-                "\n- In stock -- " + birdsBase[EAGLE][IN_STOCK] +
-                "\n- Sold -- " + birdsBase[EAGLE][SOLD]);
-
-        System.out.println("\nDucks info: " +
-                "\n- Price -- " + birdsBase[DUCK][PRICE] +
-                "\n- In stock -- " + birdsBase[DUCK][IN_STOCK] +
-                "\n- Sold -- " + birdsBase[DUCK][SOLD]);
-
-    }
-
-    public static void soldStats() //Shows the statistics of sell
-    {
-        System.out.println("\nBirds sell totals: ");
-
-        int birdsSoldC = Integer.parseInt(birdsBase[CROW][SOLD]);
-        double priceC = Double.parseDouble(birdsBase[CROW][PRICE]);
-        double earnedC = birdsSoldC * priceC;
-
-        System.out.println("\nCrows sold: " + birdsBase[CROW][SOLD] + ", Earned --> " + earnedC);
-
-        int birdsSoldE = Integer.parseInt(birdsBase[EAGLE][SOLD]);
-        double priceE = Double.parseDouble(birdsBase[EAGLE][PRICE]);
-        double earnedE = birdsSoldE * priceE;
-
-        System.out.println("\nEagles sold: " + birdsBase[EAGLE][SOLD] + ", Earned --> " + earnedE);
-
-        int birdsSoldD = Integer.parseInt(birdsBase[DUCK][SOLD]);
-        double priceD = Double.parseDouble(birdsBase[DUCK][PRICE]);
-        double earnedD = birdsSoldD * priceD;
-
-        System.out.println("\nDucks sold: " + birdsBase[DUCK][SOLD] + ", Earned --> " + earnedD);
-
-    }
+//    public static void demo() //Shows current base state
+//    {
+//        System.out.println("\nCrows info: " +
+//                "\n- Price -- " + birdsBase[CROW][PRICE] +
+//                "\n- In stock -- " + birdsBase[CROW][IN_STOCK] +
+//                "\n- Sold -- " + birdsBase[CROW][SOLD]);
+//
+//        System.out.println("\nEagles info: " +
+//                "\n- Price -- " + birdsBase[EAGLE][PRICE] +
+//                "\n- In stock -- " + birdsBase[EAGLE][IN_STOCK] +
+//                "\n- Sold -- " + birdsBase[EAGLE][SOLD]);
+//
+//        System.out.println("\nDucks info: " +
+//                "\n- Price -- " + birdsBase[DUCK][PRICE] +
+//                "\n- In stock -- " + birdsBase[DUCK][IN_STOCK] +
+//                "\n- Sold -- " + birdsBase[DUCK][SOLD]);
+//
+//    }
+//
+//    public static void soldStats() //Shows the statistics of sell
+//    {
+//        System.out.println("\nBirds sell totals: ");
+//
+//        int birdsSoldC = Integer.parseInt(birdsBase[CROW][SOLD]);
+//        double priceC = Double.parseDouble(birdsBase[CROW][PRICE]);
+//        double earnedC = birdsSoldC * priceC;
+//
+//        System.out.println("\nCrows sold: " + birdsBase[CROW][SOLD] + ", Earned --> " + earnedC);
+//
+//        int birdsSoldE = Integer.parseInt(birdsBase[EAGLE][SOLD]);
+//        double priceE = Double.parseDouble(birdsBase[EAGLE][PRICE]);
+//        double earnedE = birdsSoldE * priceE;
+//
+//        System.out.println("\nEagles sold: " + birdsBase[EAGLE][SOLD] + ", Earned --> " + earnedE);
+//
+//        int birdsSoldD = Integer.parseInt(birdsBase[DUCK][SOLD]);
+//        double priceD = Double.parseDouble(birdsBase[DUCK][PRICE]);
+//        double earnedD = birdsSoldD * priceD;
+//
+//        System.out.println("\nDucks sold: " + birdsBase[DUCK][SOLD] + ", Earned --> " + earnedD);
+//
+//    }
 
 }
