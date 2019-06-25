@@ -9,7 +9,7 @@ public class MenuService implements Menu
     @Override
     public Drink createNewDrink(String name, double price) {
 
-        Drink newDrink = new Drink();
+        Drink newDrink = new Drink("oo", 8);
         newDrink.setName(name);
         newDrink.setPrice(price);
 
