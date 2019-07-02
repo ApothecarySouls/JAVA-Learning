@@ -1,24 +1,22 @@
 package CoffeeTask;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class MenuService implements Menu
 
 {
-    private Drink[] drinkMenu = new Drink[10];
+    public List<Drink> drinkMenu = new ArrayList<>();
 
-    private int counter = 0;
+//    creates Array to store drinks
 
-    @Override
-    public Drink createNewDrink(String name, double price) {
+    public void storeDrink(Drink drink)
+    {
+        drinkMenu.add(drink);
 
-        Drink newDrink = new Drink("oo", 8);
-        newDrink.setName(name);
-        newDrink.setPrice(price);
+    }
 
-        drinkMenu[counter] = newDrink;
-        counter++;
 
-        return newDrink;
-
-}
     @Override
     public void changePrice(String name, double price) {
 
@@ -29,10 +27,14 @@ public class MenuService implements Menu
             }
         }
     }
+    // Changes price of a Drink
 
     @Override
-    public Drink[] getAllDrinks() {
+    public List<Drink> getAllDrinks()
+    {
+        List<Drink> allDrinks = drinkMenu;
 
-        return drinkMenu;
+        return allDrinks;
     }
+    // Returns the Array with all drinks
 }

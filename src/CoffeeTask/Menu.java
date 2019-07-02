@@ -1,10 +1,13 @@
 package CoffeeTask;
 
+import java.util.List;
+
 public interface Menu {
 
-    Drink createNewDrink(String name, double price);
+
+     void storeDrink(Drink drink);
 
     void changePrice(String name, double price);
 
-    Drink[] getAllDrinks();
+    List<Drink> getAllDrinks();
 }

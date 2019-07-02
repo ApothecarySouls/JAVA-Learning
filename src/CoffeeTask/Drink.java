@@ -11,6 +11,11 @@ public class Drink {
         this.price = price;
     }
 
+    public Drink()
+    {
+
+    }
+
     public String getName() {
         return name;
     }
@@ -28,7 +33,6 @@ public class Drink {
     }
 
     @Override
-    public String toString() {
-        return name;
+    public String toString() { return name + ": " + price;
     }
 }
